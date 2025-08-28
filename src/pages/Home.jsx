@@ -5,7 +5,7 @@ import Process from '../components/Process'
 import GetInTouch from '../components/GetInTouch'
 import Brands from '../components/Brands'
 import Testimonials from '../components/Testimonials'
-import Knowledge from '../components/Knowledge'
+import VpsAbout from '../components/VpsAbout'
 import Article from '../components/Article'
 import Pricing from '../components/Pricing'
 
@@ -19,7 +19,7 @@ const Home = () => {
       <GetInTouch/>
       <Brands/>
       <Testimonials/>
-      <Knowledge/>
+      <VpsAbout/>
       <Article/>
     </>
   )

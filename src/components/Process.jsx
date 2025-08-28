@@ -2,7 +2,6 @@ import React from 'react'
 import ProcessImg from '../assets/images/WebProccess.png'
 import CourseICon1 from '../assets/images/CourseIcon1.png'
 import CourseICon2 from '../assets/images/CourseIcon2.png'
-import CourseICon3 from '../assets/images/CourseIcon3.png'
 import CommonHead from './common/CommonHead'
 import { FaCheck } from "react-icons/fa6";
 

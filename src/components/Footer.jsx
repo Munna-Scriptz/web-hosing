@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router'
-import Logo from '../assets/images/Logo.png'
+import Logo from '../assets/images/PrideAgency.png'
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
@@ -15,7 +15,7 @@ const Footer = () => {
               <div id="FooterRow" className='flex items-start justify-between py-[95px]'>
                 {/* ----------------Column 1---------------- */}
                 <div>
-                  <img src={Logo} alt="Logo" />
+                  <Link to={'/'}><img className='w-[150px]' src={Logo} alt="Logo" /></Link>
                   <p className='font-inter text-[18px] leading-[36px] w-[300px] text-secondBK'>Lorem Ipsum is simply dummy texis the printing Lorem Ips is simply dummy text</p>
                   <div className='flex items-center gap-[10px] mt-[42px]'>
                     <Link to={'/'} className='border-1 border-[#2f55ef3f] w-[35px] h-[35px] rounded-full flex items-center justify-center hover:text-[#2F57EF] duration-[.3s] cursor-pointer'>
@@ -34,23 +34,23 @@ const Footer = () => {
                 </div>
                 {/* ----------------Column 2---------------- */}
                 <div>
-                    <h2 className='font-inter font-bold text-[21px] text-secondBK mb-[26px]'>All Links</h2>
+                    <h2 className='font-inter font-bold text-[21px] text-secondBK mb-[26px]'>Domains</h2>
                     <div className='flex flex-col gap-[12px]'>
                       <div className='font-inter text-secondBK text-[17px] flex items-center gap-[20px]'>
                         <FaArrowRight />
-                        <Link to={'/'}>Credit industrys</Link>
+                        <Link to={'/'}>Domain Name Search</Link>
                       </div>
                       <div className='font-inter text-secondBK text-[17px] flex items-center gap-[20px]'>
                         <FaArrowRight />
-                        <Link to={'/'}>Credit Consulting</Link>
+                        <Link to={'/'}>Domain Transfer</Link>
                       </div>
                       <div className='font-inter text-secondBK text-[17px] flex items-center gap-[20px]'>
                         <FaArrowRight />
-                        <Link to={'/'}>Business Credit industry</Link>
+                        <Link to={'/'}>Domain Privacy</Link>
                       </div>
                       <div className='font-inter text-secondBK text-[17px] flex items-center gap-[20px]'>
                         <FaArrowRight />
-                        <Link to={'/'}>Finance industry</Link>
+                        <Link to={'/'}>Website Security</Link>
                       </div>
                     </div>
                 </div>
@@ -85,13 +85,13 @@ const Footer = () => {
                     <h2 className='font-inter font-bold text-[21px] text-secondBK mb-[26px]'>Get In Touch</h2>
                     <div className='flex flex-col gap-[12px]'>
                       <div className='font-inter text-secondBK text-[17px] flex items-center gap-[20px]'>
-                        <Link to={'/'}>E-mail:example@mail.com</Link>
+                        <Link to={'/'}>munnascriptz@gmail.com</Link>
                       </div>
                       <div className='font-inter text-secondBK text-[17px] flex items-center gap-[20px]'>
-                        <Link to={'/'}>Call:+125 856 632</Link>
+                        <Link to={'/'}>Call: +880 1327-312666</Link>
                       </div>
                       <div className='font-inter text-secondBK text-[17px] flex items-center gap-[20px]'>
-                        <Link to={'/'}>Location:3 Number Road ,C block, Housing,USA</Link>
+                        <Link to={'/'}>Location: Dhaka , Bangladesh</Link>
                       </div>
                     </div>
                 </div>

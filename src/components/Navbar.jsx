@@ -4,9 +4,8 @@ import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaAngleDown } from "react-icons/fa6";
 import { IoSearchSharp } from "react-icons/io5";
-import { MdOutlineShoppingCart } from "react-icons/md";
 
-import Logo from '../assets/images/domainHostingLogo.png'
+import Logo from '../assets/images/PrideAgency.png'
 import { Link } from 'react-router';
 const Navbar = () => {
   return (
@@ -20,7 +19,7 @@ const Navbar = () => {
                 <p>Dhaka , Bangladesh</p>
               </div>
               <div className="flex items-center gap-[31px] font-inter text-[17px] text-secondBK">
-                <p className='flex items-center gap-1'><IoCall /> (629) 555-0129</p>
+                <p className='flex items-center gap-1'><IoCall />+880 1327-312666</p>
                 <p className='flex items-center gap-1'><MdEmail />munnascriptz@gmail.com</p>
               </div>
             </div>
