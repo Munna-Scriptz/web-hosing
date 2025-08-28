@@ -1,6 +1,6 @@
 import React from 'react'
-import BgImage from '../assets/images/GetInTouchImg.png'
-import CommonHead from './common/CommonHead'
+import BgImage from '../assets/images/contactImage.png'
+
 const GetInTouch = () => {
   return (
     <>
