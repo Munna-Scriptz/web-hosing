@@ -28,7 +28,7 @@ const Pricing = () => {
                     {/* ------------Pricing Card-------------- */}
                     <div className='flex lg:flex-row flex-col lg:gap-y-0 gap-y-5 items-center justify-between mt-10'>
                         {/* -------------First Card------------- */}
-                        <div className='lg:w-[400px] lg:p-10 p-7 border-1 border-[#E2E5F1] rounded-[8px] flex items-center flex-col duration-[.3s] hover:shadow-lg shadow-[#6366F159]'>
+                        <div className='lg:w-[400px] w-full lg:p-10 p-7 border-1 border-[#E2E5F1] rounded-[8px] flex items-center flex-col duration-[.3s] hover:shadow-lg shadow-[#6366F159]'>
                             <div><img src={Wrincle} alt="Emoji" /></div>
                             <div>
                                 <p className='text-[#9397AD] text-lg mb-1'>Medium traffic personal sites</p>
@@ -78,7 +78,7 @@ const Pricing = () => {
                             </div>
                         </div>
                         {/* -------------Second Card------------- */}
-                        <div className='relative lg:w-[400px] lg:p-10 p-7 border-1 border-[#E2E5F1] rounded-[8px] flex items-center flex-col duration-[.3s] hover:shadow-lg shadow-[#6366F159]'>
+                        <div className='relative lg:w-[400px] w-full lg:p-10 p-7 border-1 border-[#E2E5F1] rounded-[8px] flex items-center flex-col duration-[.3s] hover:shadow-lg shadow-[#6366F159]'>
                             <div><img src={smile} alt="Emoji" /></div>
                             {/* ------------Status------------- */}
                             <div className='absolute top-[16px] left-0 drop-shadow-md drop-shadow-success bg-success py-[6px] px-[8px] text-white text-sm font-semibold rounded-r-[4px] flex items-center gap-1'><FaRegStar className='text-[14px]'/><p>Popular</p></div>
@@ -131,7 +131,7 @@ const Pricing = () => {
                             </div>
                         </div>
                         {/* -------------Third Card------------- */}
-                        <div className='lg:w-[400px] lg:p-10 p-7 border-1 border-[#E2E5F1] rounded-[8px] flex items-center flex-col duration-[.3s] hover:shadow-lg shadow-[#6366F159]'>
+                        <div className='lg:w-[400px] w-full lg:p-10 p-7 border-1 border-[#E2E5F1] rounded-[8px] flex items-center flex-col duration-[.3s] hover:shadow-lg shadow-[#6366F159]'>
                             <div><img src={beaming} alt="Emoji" /></div>
                             <div>
                                 <p className='text-[#9397AD] text-lg mb-1'>Enterprise content management</p>

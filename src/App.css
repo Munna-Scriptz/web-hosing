@@ -19,7 +19,7 @@ footer{
     background-size: cover;
     background-position: center;
 }
-/* --------Category Dost  */
+/* --------Slider Related Css  */
 .slick-dots {
     bottom: -50px !important;
 }
@@ -35,4 +35,7 @@ footer{
     height: 10px !important;
     border-radius: 10px;
     border: 1px solid #969696;
+}
+.slick-arrow {
+    display: none !important;
 }

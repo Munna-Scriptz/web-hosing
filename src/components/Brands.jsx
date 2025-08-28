@@ -9,12 +9,12 @@ const Brands = () => {
     <>
         <section id='Brands' className='mt-[120px]'>
             <div className="container">
-                <div id="BrandsRow" className='flex items-center justify-between'>
-                    <img src={brand1} alt="Brands" />
-                    <img src={brand2} alt="Brands" />
-                    <img src={brand3} alt="Brands" />
-                    <img src={brand4} alt="Brands" />
-                    <img src={brand5} alt="Brands" />
+                <div id="BrandsRow" className='flex flex-wrap gap-y-5 items-center justify-between'>
+                  <img src={brand1} alt="Brands" />
+                  <img src={brand2} alt="Brands" />
+                  <img src={brand3} alt="Brands" />
+                  <img src={brand4} alt="Brands" />
+                  <img src={brand5} alt="Brands" />
                 </div>
             </div>
         </section>
