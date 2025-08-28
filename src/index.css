@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 /* ------------Tailwind------------ */
 @import "tailwindcss";
 
@@ -10,6 +10,7 @@
 /* ------------Themes------------ */
 @theme{
   --font-inter: "Inter", "sans-serif";
+  --font-manrope: "Manrope", "sans-serif";
   --color-brand: #2F57EF;
   --color-primary: #25C6DA;
   --color-secondBK: #192335;

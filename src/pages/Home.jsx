@@ -7,6 +7,7 @@ import Brands from '../components/Brands'
 import Testimonials from '../components/Testimonials'
 import Knowledge from '../components/Knowledge'
 import Article from '../components/Article'
+import Pricing from '../components/Pricing'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Banner/>
       <Services/>
       <Process/>
+      <Pricing/>
       <GetInTouch/>
       <Brands/>
       <Testimonials/>
