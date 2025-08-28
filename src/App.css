@@ -1,0 +1,21 @@
+/* --------------Common Css--------------- */
+#Banner{
+    width: 100%;
+    background-image: url(../src/assets/images/BannerDeco.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#Testimonials{
+    background: url(../src/assets/images/TestimonialBg.png), #192335;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+footer{
+    width: 100%;
+    background-image: url(../src/assets/images/FooterBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
