@@ -32,7 +32,7 @@ const VpsAbout = () => {
                         </div>
                         {/* ----------------Buttons--------------- */}
                         <div className='mt-10 flex lg:justify-start justify-between items-center gap-8'>
-                            <button class="bg-[#2F57EF] text-white py-[12px] lg:px-[30px] px-[20px] lg:text-lg text-base font-inter rounded-[5px] cursor-pointer z-30 relative font-semibold after:-z-20 after:absolute after:h-1 after:w-1 after:bg-secondBK after:left-5 overflow-hidden after:bottom-0 after:translate-y-full after:rounded-md hover:after:scale-[300] hover:after:transition-all hover:after:duration-700 after:transition-all after:duration-700 transition-all duration-700">Purchase Now</button>
+                            <button className="bg-[#2F57EF] text-white py-[12px] lg:px-[30px] px-[20px] lg:text-lg text-base font-inter rounded-[5px] cursor-pointer z-30 relative font-semibold after:-z-20 after:absolute after:h-1 after:w-1 after:bg-secondBK after:left-5 overflow-hidden after:bottom-0 after:translate-y-full after:rounded-md hover:after:scale-[300] hover:after:transition-all hover:after:duration-700 after:transition-all after:duration-700 transition-all duration-700">Purchase Now</button>
                             <div>
                                 <h2 className='text-secondBK text-2xl font-manrope font-bold'>Starting at</h2>
                                 <p className='text-brand font-medium font-inter text-lg'>$19.99/mo*</p>

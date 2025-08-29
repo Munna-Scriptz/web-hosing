@@ -7,8 +7,6 @@ import pfp1 from '../assets/images/SliderPfp.png'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaAngleLeft } from "react-icons/fa6";
-import { FaAngleRight } from "react-icons/fa6";
 const Testimonials = () => {
     const settings = {
         dots: true,
@@ -18,8 +16,6 @@ const Testimonials = () => {
         autoplaySpeed: 4000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        nextArrow: <FaAngleRight />,
-        prevArrow: <FaAngleLeft />
     };
     
     const MyReviews = [

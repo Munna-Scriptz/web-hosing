@@ -1,13 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaLocationDot } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaAngleDown } from "react-icons/fa6";
 import { IoSearchSharp } from "react-icons/io5";
-
 import Logo from '../assets/images/PrideAgency.png'
 import { Link } from 'react-router';
+
+
 const Navbar = () => {
+  const lang = localStorage.getItem('langName')
+  // ------------Lang Handler--------------
+  const handleLang = (e)=>{
+    localStorage.setItem('langName' , e.target.value)
+    console.log(localStorage.getItem('langName'))
+
+    setTimeout(() => {
+      window.location.reload()
+    }, 200);
+    
+  }
+  
   return (
     <nav className='lg:block hidden'>
       {/* ----------------Header Section----------------- */}
@@ -19,11 +32,13 @@ const Navbar = () => {
                 <p>Ekrampur CNG Station, Kishoreganj, Dhaka</p>
               </div>
               <div className="flex items-center gap-[31px] font-inter text-[17px] text-secondBK">
-                <select className='cursor-pointer font-inter text-secondBK outline-none'>
-                  <option value="ENG">English</option>
-                  <option value="ENG">Bangla</option>
-                  <option value="ENG">Hindi</option>
+                {/* ---------Language Selector-------- */}
+                <select id="lang-switch" value={lang} onChange={handleLang} className='cursor-pointer font-inter text-secondBK outline-none'>
+                  <option value="en">English</option>
+                  <option value="bn">Bangla</option>
+                  <option value="hi">Hindi</option>
                 </select>
+                {/* -----------Contact info------------ */}
                 <p className='flex items-center gap-1'><IoCall />+880 1327-312666</p>
                 <p className='flex items-center gap-1'><MdEmail />munnascriptz@gmail.com</p>
               </div>
