@@ -16,9 +16,14 @@ const Navbar = () => {
             <div className='flex items-center justify-between'>
               <div className="flex items-center gap-2 text-secondBK font-inter text-[17px]">
                 <FaLocationDot />
-                <p>Dhaka , Bangladesh</p>
+                <p>Ekrampur CNG Station, Kishoreganj, Dhaka</p>
               </div>
               <div className="flex items-center gap-[31px] font-inter text-[17px] text-secondBK">
+                <select className='cursor-pointer font-inter text-secondBK outline-none'>
+                  <option value="ENG">English</option>
+                  <option value="ENG">Bangla</option>
+                  <option value="ENG">Hindi</option>
+                </select>
                 <p className='flex items-center gap-1'><IoCall />+880 1327-312666</p>
                 <p className='flex items-center gap-1'><MdEmail />munnascriptz@gmail.com</p>
               </div>

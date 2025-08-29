@@ -65,9 +65,9 @@ const Footer = () => {
       <div>
         <h2 className='font-inter font-bold text-lg lg:text-[21px] text-secondBK mb-5 lg:mb-[26px]'>Get In Touch</h2>
         <div className='flex flex-col gap-3 lg:gap-[12px]'>
-          <p className='font-inter text-secondBK text-sm md:text-base lg:text-[17px]'>munnascriptz@gmail.com</p>
-          <p className='font-inter text-secondBK text-sm md:text-base lg:text-[17px]'>Call: +880 1327-312666</p>
-          <p className='font-inter text-secondBK text-sm md:text-base lg:text-[17px]'>Location: Dhaka , Bangladesh</p>
+          <p className='font-inter text-secondBK text-sm md:text-base lg:text-[17px]'><span className='font-bold'>Email:</span> munnascriptz@gmail.com</p>
+          <p className='font-inter text-secondBK text-sm md:text-base lg:text-[17px]'><span className='font-bold'>Call:</span> +880 1327-312666</p>
+          <p className='font-inter text-secondBK text-sm md:text-base lg:text-[17px]'><span className='font-bold'>Location:</span> Ekrampur CNG Station, Kishoreganj, Dhaka, Bangladesh </p>
         </div>
       </div>
     </div>
