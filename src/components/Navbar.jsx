@@ -18,7 +18,6 @@ const Navbar = () => {
     setTimeout(() => {
       window.location.reload()
     }, 200);
-    
   }
   
   return (
@@ -36,7 +35,6 @@ const Navbar = () => {
                 <select id="lang-switch" value={lang} onChange={handleLang} className='cursor-pointer font-inter text-secondBK outline-none'>
                   <option value="en">English</option>
                   <option value="bn">Bangla</option>
-                  <option value="hi">Hindi</option>
                 </select>
                 {/* -----------Contact info------------ */}
                 <p className='flex items-center gap-1'><IoCall />+880 1327-312666</p>
@@ -51,10 +49,14 @@ const Navbar = () => {
           <div className='flex items-center gap-[82px]'>
             <Link to={'/'}><img className='w-[100px]' src={Logo} alt="Logo" /></Link>
             <ul className="flex items-center gap-[24px] font-inter text-base text-secondBK font-medium">
-              <li className="hover:text-brand duration-400 cursor-pointer flex items-center gap-1">Home <FaAngleDown className='text-[10px]'/></li>
-              <li className="hover:text-brand duration-400 cursor-pointer flex items-center gap-1">About Us <FaAngleDown className='text-[10px]'/></li>
-              <li className="hover:text-brand duration-400 cursor-pointer flex items-center gap-1">Services <FaAngleDown className='text-[10px]'/></li>
-              <li className="hover:text-brand duration-400 cursor-pointer flex items-center gap-1">Contact <FaAngleDown className='text-[10px]'/></li>
+              {lang === 'en' && <li className="hover:text-brand duration-400 cursor-pointer flex items-center gap-1">Home <FaAngleDown className='text-[10px]'/></li>}
+              {lang === 'bn' && <li className="hover:text-brand duration-400 cursor-pointer flex items-center gap-1">বাড়ি <FaAngleDown className='text-[10px]'/></li>}
+              {lang === 'en' && <li className="hover:text-brand duration-400 cursor-pointer flex items-center gap-1">About Us <FaAngleDown className='text-[10px]'/></li>}
+              {lang === 'bn' && <li className="hover:text-brand duration-400 cursor-pointer flex items-center gap-1">আমাদের সম্পর্কে <FaAngleDown className='text-[10px]'/></li>}
+              {lang === 'en' && <li className="hover:text-brand duration-400 cursor-pointer flex items-center gap-1">Services <FaAngleDown className='text-[10px]'/></li>}
+              {lang === 'bn' && <li className="hover:text-brand duration-400 cursor-pointer flex items-center gap-1">সেবা <FaAngleDown className='text-[10px]'/></li>}
+              {lang === 'en' && <li className="hover:text-brand duration-400 cursor-pointer flex items-center gap-1">Contact <FaAngleDown className='text-[10px]'/></li>}
+              {lang === 'bn' && <li className="hover:text-brand duration-400 cursor-pointer flex items-center gap-1">যোগাযোগ <FaAngleDown className='text-[10px]'/></li>}
             </ul>
           </div>
           <div className="flex items-center gap-3">

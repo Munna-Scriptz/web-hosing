@@ -8,6 +8,7 @@ import domain5 from '../assets/images/domain5.png'
 import BannerImage from '../assets/images/bannerRightImg.svg'
 
 const Banner = () => {
+  const lang = localStorage.getItem('langName')
   return (
     <>
       <section id='Banner' className='mt-[65px]'>
@@ -17,8 +18,10 @@ const Banner = () => {
             <div>
               {/* ---------------Row One----------------- */}
               <div>
-                <h1 className='font-inter font-bold text-secondBK lg:text-[48px] text-[36px] lg:w-[500px]'>Search For Your Own Unique <span className='text-brand'>Domain !</span></h1>
-                <p className='font-inter text-[#969696] mt-5 lg:w-[500px] lg:text-lg text-base'>Searching for that perfect domain? Progressively benchmark turnkey innovation after quality channels.</p>
+                {lang === 'en' && <h1 className='font-inter font-bold text-secondBK lg:text-[48px] text-[36px] lg:w-[500px]'>Search For Your Own Unique <span className='text-brand'>Domain !</span></h1>}
+                {lang === 'bn' && <h1 className='font-inter font-bold text-secondBK lg:text-[48px] text-[36px] lg:w-[500px]'>আমরা প্রস্তুত আপনার ব্যবসায়িক সফলতা নিশ্চিত <span className='text-brand'>করতে</span></h1>}
+                {lang === 'en' && <p className='font-inter text-[#969696] mt-5 lg:w-[500px] lg:text-lg text-base'>Searching for that perfect domain? Progressively benchmark turnkey innovation after quality channels.</p>}
+                {lang === 'bn' && <p className='font-inter text-[#969696] mt-5 lg:w-[500px] lg:text-lg text-base'>সেই নিখুঁত ডোমেন খুঁজছেন? ধীরে ধীরে মানসম্পন্ন চ্যানেলের পরে টার্নকি উদ্ভাবনের মানদণ্ড তৈরি করছেন।</p>}
               </div>
               {/* ---------------Input----------------- */}
               <div className='mt-10'>
@@ -50,8 +53,10 @@ const Banner = () => {
                   </div>
                 </div>
                 <div className='mt-8'>
-                  <p className='text-secondBK font-inter font-medium'>Starting At Only</p>
-                  <h2 className='text-secondBK font-inter text-3xl mt-2 font-semibold'>$2.78/<span className='text-brand'>mo</span></h2>
+                {lang === 'en' && <p className='text-secondBK font-inter font-medium'>Starting At Only</p>}
+                {lang === 'bn' && <p className='text-secondBK font-inter font-medium'>শুধুমাত্র শুরু</p>}
+                {lang === 'en' && <h2 className='text-secondBK font-inter text-3xl mt-2 font-semibold'>$2.78/<span className='text-brand'>mo</span></h2>}
+                {lang === 'bn' && <h2 className='text-secondBK font-inter text-3xl mt-2 font-semibold'>339.18৳/<span className='text-brand'>মাস</span></h2>}
                 </div>
               </div>
             </div>
