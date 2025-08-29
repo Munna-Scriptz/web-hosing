@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Logo from '../assets/images/PrideAgency.png'
 import { Link } from 'react-router'
 import { IoHomeOutline } from 'react-icons/io5';
@@ -9,6 +9,19 @@ import { TbArrowsJoin } from 'react-icons/tb';
 import { IoIosGitNetwork } from 'react-icons/io';
 const ResNavbar = () => {
     const [Value , SetValue] = useState(true)
+      useEffect(()=>{
+        localStorage.setItem('langName' , 'en')
+      } , [])
+      const lang = localStorage.getItem('langName')
+      // ------------Lang Handler--------------
+      const handleLang = (e)=>{
+        localStorage.setItem('langName' , e.target.value)
+        console.log(localStorage.getItem('langName'))
+    
+        setTimeout(() => {
+          window.location.reload()
+        }, 200);
+      }
   return (
     <>
     <nav className='lg:hidden block'>
@@ -17,12 +30,19 @@ const ResNavbar = () => {
                 <div className='flex items-center justify-between'>
                     <Link to={'/'}><img className='w-[78px] z-50' src={Logo} alt="Logo" /></Link>
                 </div>
-                <div onClick={()=>SetValue(!Value)} className='cursor-pointer text-[24px] z-50'>
-                   <button className='relative w-[32px] h-[28px] cursor-pointer right-0' onClick={()=>SetValue(!Value)}>
-                        <span className={`w-[20px] h-[3px] bg-black rounded-[4px] absolute right-[10px] duration-[.3s] ${Value? 'rotate-[0deg] top-[3px]' : 'rotate-[45deg] top-[7px]'}`} ></span>
-                        <span className={`w-[20px] h-[3px] bg-black rounded-[4px] absolute top-[10px] right-[8px] duration-[.3s] ${Value? 'opacity-100' : 'opacity-0'}`}></span>
-                        <span className={`w-[20px] h-[3px] bg-black rounded-[4px] absolute right-[10px] duration-[.3s] ${Value? 'rotate-[0deg] top-[17px]' : 'rotate-[-45deg] top-[7px]' }`}></span>
-                    </button>
+                <div className='flex items-start gap-4'>
+                    {/* ---------Language Selector-------- */}
+                    <select id="lang-switch" value={lang || ''} onChange={handleLang} className='cursor-pointer font-inter text-[16px] text-secondBK outline-none'>
+                        <option value="en">English</option>
+                        <option value="bn">Bangla</option>
+                    </select>
+                    <div onClick={()=>SetValue(!Value)} className='cursor-pointer text-[24px] z-50'>
+                    <button className='relative w-[32px] h-[28px] cursor-pointer right-0' onClick={()=>SetValue(!Value)}>
+                            <span className={`w-[20px] h-[3px] bg-black rounded-[4px] absolute right-[10px] duration-[.3s] ${Value? 'rotate-[0deg] top-[3px]' : 'rotate-[45deg] top-[7px]'}`} ></span>
+                            <span className={`w-[20px] h-[3px] bg-black rounded-[4px] absolute top-[10px] right-[8px] duration-[.3s] ${Value? 'opacity-100' : 'opacity-0'}`}></span>
+                            <span className={`w-[20px] h-[3px] bg-black rounded-[4px] absolute right-[10px] duration-[.3s] ${Value? 'rotate-[0deg] top-[17px]' : 'rotate-[-45deg] top-[7px]' }`}></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaLocationDot } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
@@ -9,6 +9,9 @@ import { Link } from 'react-router';
 
 
 const Navbar = () => {
+  useEffect(()=>{
+    localStorage.setItem('langName' , 'en')
+  } , [])
   const lang = localStorage.getItem('langName')
   // ------------Lang Handler--------------
   const handleLang = (e)=>{
@@ -32,7 +35,7 @@ const Navbar = () => {
               </div>
               <div className="flex items-center gap-[31px] font-inter text-[17px] text-secondBK">
                 {/* ---------Language Selector-------- */}
-                <select id="lang-switch" value={lang} onChange={handleLang} className='cursor-pointer font-inter text-secondBK outline-none'>
+                <select id="lang-switch" value={lang || ''} onChange={handleLang} className='cursor-pointer font-inter text-secondBK outline-none'>
                   <option value="en">English</option>
                   <option value="bn">Bangla</option>
                 </select>
