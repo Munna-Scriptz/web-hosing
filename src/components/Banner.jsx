@@ -6,9 +6,10 @@ import domain3 from '../assets/images/domain3.webp'
 import domain4 from '../assets/images/domain4.webp'
 import domain5 from '../assets/images/domain5.png'
 import BannerImage from '../assets/images/bannerRightImg.svg'
+import { useSelector } from 'react-redux'
 
 const Banner = () => {
-  const lang = localStorage.getItem('langName')
+  const lang = useSelector((state)=>state.MyRedux.value)
   return (
     <>
       <section id='Banner' className='mt-[65px]'>

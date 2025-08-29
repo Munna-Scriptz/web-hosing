@@ -6,21 +6,18 @@ import { FaAngleDown } from "react-icons/fa6";
 import { IoSearchSharp } from "react-icons/io5";
 import Logo from '../assets/images/PrideAgency.png'
 import { Link } from 'react-router';
+import { useDispatch, useSelector } from 'react-redux';
+import { LangSelected } from '../LangSlice';
 
 
 const Navbar = () => {
-  useEffect(()=>{
-    localStorage.setItem('langName' , 'en')
-  } , [])
-  const lang = localStorage.getItem('langName')
+  const dispatch = useDispatch()
+  const lang = useSelector((state)=>state.MyRedux.value)
+
   // ------------Lang Handler--------------
   const handleLang = (e)=>{
     localStorage.setItem('langName' , e.target.value)
-    console.log(localStorage.getItem('langName'))
-
-    setTimeout(() => {
-      window.location.reload()
-    }, 200);
+    dispatch(LangSelected(localStorage.getItem('langName')))
   }
   
   return (

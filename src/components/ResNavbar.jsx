@@ -4,24 +4,22 @@ import { Link } from 'react-router'
 import { IoHomeOutline } from 'react-icons/io5';
 import { LuShoppingBag } from 'react-icons/lu';
 import { MdOutlineGroup } from 'react-icons/md';
-import { RiShoppingCart2Line, RiUserLine } from 'react-icons/ri';
+import { RiUserLine } from 'react-icons/ri';
 import { TbArrowsJoin } from 'react-icons/tb';
 import { IoIosGitNetwork } from 'react-icons/io';
+import { useDispatch, useSelector } from 'react-redux';
+import { LangSelected } from '../LangSlice';
 const ResNavbar = () => {
     const [Value , SetValue] = useState(true)
-      useEffect(()=>{
-        localStorage.setItem('langName' , 'en')
-      } , [])
-      const lang = localStorage.getItem('langName')
-      // ------------Lang Handler--------------
-      const handleLang = (e)=>{
+    // ----------Language Selector-----------
+    const dispatch = useDispatch()
+    const lang = useSelector((state)=>state.MyRedux.value)
+
+  // ------------Lang Handler--------------
+    const handleLang = (e)=>{
         localStorage.setItem('langName' , e.target.value)
-        console.log(localStorage.getItem('langName'))
-    
-        setTimeout(() => {
-          window.location.reload()
-        }, 200);
-      }
+        dispatch(LangSelected(localStorage.getItem('langName')))
+    }
   return (
     <>
     <nav className='lg:hidden block'>
