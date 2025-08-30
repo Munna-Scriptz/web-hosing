@@ -25,12 +25,12 @@ web-hosing/
 │   └── favicon.ico
 ├── src/
 │   ├── components/
-│   │   ├── Navbar.js
-│   │   ├── PlanCard.js
-│   │   ├── Footer.js
+│   │   ├── Navbar.jsx
+│   │   ├── PlanCard.jsx
+│   │   ├── Footer.jsx
 │   │   └── ... 
 │   ├── styles/
-│   │   └── App.module.css
+│   │   └── app.css
 │   ├── App.js
 │   └── index.js
 ├── package.json
@@ -60,7 +60,6 @@ Or try Styled Components for modular, JS-powered design.
 Structure components for reusability: like PlanCard for hosting plans, Navbar, and Footer.
 
 Add interactivity or global state later using React hooks or Context API.
-
 
 
 ---
